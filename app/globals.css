@@ -2,7 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .main {
+  min-height:100vh;
+  display:grid;
+  place-content: center;
+  margin:0;
+}
+  .profile-button {
+    box-shadow: 5px 5px;
+}
+
+  .drop-shadow {
+    box-shadow: 5px 5px #000000;
+    }
+
+.cream-background{
+  background-color: #F9EFE7;
+}
+.profile-button:hover {
+  box-shadow: 2px 2px;
+  transition: all 0.2s ease-in-out;
+}
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +43,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +53,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
+
+/* ORIGNAL PAGE STYLING */
+/* :root {
+    --bs-font-sans-serif: "Roboto", sans-serif;
+    --bs-blue: #2067F5;
+    --bs-primary: #2067F5;
+} */
+
