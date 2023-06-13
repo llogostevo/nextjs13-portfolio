@@ -3,6 +3,8 @@ import LinkedInLogo from "./Components/LinkedInLogo";
 import GitHubLogo from "./Components/GitHubLogo";
 import YouTubeLogo from "./Components/YouTubeLogo";
 import ProfileButton from "./Components/ProfileButton";
+// import Projects from "@/lib/getAllProjects";
+import Projects from "./Components/Projects";
 export default function Home() {
   return (
     <main className="">
@@ -28,6 +30,9 @@ export default function Home() {
         <div className="flex items-center justify-center md:justify-start md:pl-10 pt-10">
         <ProfileButton src="/contact" title="Let's Talk"/>
         </div>
+      </section>
+      <section>
+        <Projects />
       </section>
     </main>
   )

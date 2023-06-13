@@ -1,9 +1,3 @@
-type ImageComponentProps = {
-    src: string,
-    alt: string,
-    id: string,
-}
-
 type HyperLinkProps = {
     src: string, 
     title: string, 
@@ -12,4 +6,12 @@ type HyperLinkProps = {
 type ProfileButtonProps = {
     src: string, 
     title: string, 
+}
+
+type DataProjects = {
+    id: number,
+    title: string, 
+    description: string, 
+    live_view_link: string,
+    github_link: string,
 }
