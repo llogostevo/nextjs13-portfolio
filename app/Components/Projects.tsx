@@ -10,16 +10,18 @@ export default async function Projects() {
 
   return (
     <main>
-        <ul>
+        <ul className="flex flex-row flex-wrap items-center">
         {projects.map((project)=> (
-          <li key={project.id}>
-            <h1 className="text-2xl text-yellow-700">{project.title}</h1>
-                <ul>
-                    <li>{project.description}</li>
-                    <li><ProfileButton src={project.live_view_link} title="Live View" /></li>
-                    <li><ProfileButton src={project.github_link} title="Git Hub" /></li>
-                </ul>
-            </li>
+          <div className ="max-w-sm rounded overflow-hidden shadow-lg p-5 m-5  flex flex-col ">
+              <li className="items-center " key={project.id}>
+                <h1 className="text-2xl items-center ">{project.title}</h1>
+                  <ul>
+                      <li>{project.description}</li>
+                      <li><ProfileButton src={project.live_view_link} title="Live View" /></li>
+                      <li><ProfileButton src={project.github_link} title="Git Hub" /></li>
+                  </ul>
+              </li>
+            </div>
         ))}
         </ul>
     </main>

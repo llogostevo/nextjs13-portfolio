@@ -4,8 +4,9 @@ type HyperLinkProps = {
 }
 
 type ProfileButtonProps = {
-    src: string, 
-    title: string, 
+    src?: string, 
+    title?: string,
+    
 }
 
 type DataProjects = {

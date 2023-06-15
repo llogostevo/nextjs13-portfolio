@@ -1,4 +1,8 @@
-
+types.d.ts
+- need to have form button attributes inside the profile button props
+- need to adjust the profile button component to include the form button attributes
+- test the buttons 
+- create form button with new props
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
